@@ -6,7 +6,7 @@ import InputLabel from '@mui/material/InputLabel';
 import { Container, Paper, Button, Select, MenuItem, CardHeader } from '@mui/material';
 
 export default function InputAdornments() {
-  const vType = ["Car", "Truck", "Motorcycle", "RV"];
+  const vType = ["Car", "Truck", "MotorCycle", "RV"];
   const [value, setValue] = React.useState("");
   const [VIN, setVIN] = React.useState("");
   const [color, setColor] = React.useState("");
@@ -42,7 +42,17 @@ export default function InputAdornments() {
        })
    })
   .then(()=>{
-    console.log("Vehicle is now up for Sale!!!")
+    console.log("Vehicle is now up for Sale!!!");
+    setVIN("");
+    setColor("");
+    setPrice("");
+    setMake("");
+    setModel("");
+    setBody("");
+    setVehicleType("");
+    setTowCapacity("");
+    setMotorcycleType(null);
+    setWaterCapacity("");
   })
 }
 
@@ -93,7 +103,7 @@ return (
       </MenuItem>
       <MenuItem value={'Car'}>Car</MenuItem>
       <MenuItem value={'Truck'}>Truck</MenuItem>
-      <MenuItem value={'Motorcycle'}>Motorcycle</MenuItem>
+      <MenuItem value={'MotorCycle'}>MotorCycle</MenuItem>
       <MenuItem value={'RV'}>RV</MenuItem>
     </Select>
   </FormControl>

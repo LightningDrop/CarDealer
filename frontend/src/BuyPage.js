@@ -25,6 +25,7 @@ async function deleteVehicle(id) {
       mode:'cors',
       method: "DELETE"
     });
+    window.location.reload(false);
     return response.json();
   }
 
@@ -39,10 +40,11 @@ async function deleteVehicle(id) {
         <p key={vehicle.vehicleVIN}>
             Vin ={vehicle.vehicleVIN} {vehicle.price} {vehicle.make} {vehicle.model} {vehicle.color} {vehicle.vehicleType} {vehicle.towCapacity} {vehicle.motorcycleType} {vehicle.waterCapacity}</p>
       ))}
-      <TextField id="outlined-basic" label="Buy" variant="outlined" fullWidth value={vehicleVIN}
+      <TextField id="outlined-basic" label="Input VIN Number" variant="outlined" fullWidth value={vehicleVIN}
         onChange={(e)=>setVIN(e.target.value)}
         />
-      <Button variant="outline-primary" onClick={handleClick}>BUy that shit</Button>{' '}
+        &nbsp;
+      <Button variant="outline-primary" onClick={handleClick}>BUY THE VEHICLE</Button>{' '}
     </div>
   );
 }
