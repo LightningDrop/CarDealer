@@ -66,8 +66,8 @@ export default function SearchAppBar() {
           >
             <ButtonGroup disableElevation variant="contained">
             <Button href='/'>Home</Button>
-            <Button href='/BuyPage'>Buy</Button>
-            <Button href='/SellPage'>Sell</Button>
+            {/* <Button href='/BuyPage'>Buy</Button>
+            <Button href='/SellPage'>Sell</Button> */}
             </ButtonGroup>
           </IconButton>
           <Typography

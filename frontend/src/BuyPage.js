@@ -3,6 +3,7 @@ import Axios from "axios";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+
 export default function BuyPage() {
     const[vehicles,setVehicles]=useState([])
     const [vehicleVIN, setVIN] = React.useState("");
@@ -38,14 +39,21 @@ async function deleteVehicle(id) {
     <div>
       {vehicles.map((vehicle) => (
         <p key={vehicle.vehicleVIN}>
-            Vin ={vehicle.vehicleVIN} {vehicle.price} {vehicle.make} {vehicle.model} {vehicle.color} {vehicle.vehicleType} {vehicle.towCapacity} {vehicle.motorcycleType} {vehicle.waterCapacity}</p>
+            [ {vehicle.vehicleVIN} ][ ${vehicle.price} ][ {vehicle.make} ][ {vehicle.model} ][ {vehicle.color} ][ {vehicle.vehicleType} ]</p>
       ))}
+
+      
       <TextField id="outlined-basic" label="Input VIN Number" variant="outlined" fullWidth value={vehicleVIN}
         onChange={(e)=>setVIN(e.target.value)}
         />
         &nbsp;
-      <Button variant="outline-primary" onClick={handleClick}>BUY THE VEHICLE</Button>{' '}
+      <Button variant="contained" color="secondary" onClick={handleClick}>BUY THE VEHICLE</Button>{' '}
+        &nbsp;
+        <h3>Example</h3>
+        <img src = "https://i.imgur.com/YELvzyn.jpg"></img>
     </div>
+    
+
   );
 }
 

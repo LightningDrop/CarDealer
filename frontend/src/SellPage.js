@@ -68,31 +68,37 @@ return (
     <TextField id="outlined-basic" label="Vehicle Identification Number" variant="outlined" fullWidth 
     value={VIN}
     onChange={(e)=>setVIN(e.target.value)}
+    helperText="Ex. 3GNFK16318G269795"
     />
     &nbsp;
-    <TextField id="outlined-basic" label="Price" variant="outlined" fullWidth
+    <TextField id="outlined-basic" label="Price" variant="outlined" fullWidth 
     value={price}
     onChange={(e)=>setPrice(e.target.value)}
+    helperText="Ex. Max 50000"
     />
     &nbsp;
     <TextField id="outlined-basic" label="Make " variant="outlined" fullWidth
     value={make}
     onChange={(e)=>setMake(e.target.value)}
+    helperText="Ex. Toyota"
     />
     &nbsp;
     <TextField id="outlined-basic" label="Model " variant="outlined" fullWidth
     value={model}
     onChange={(e)=>setModel(e.target.value)}
+    helperText="Ex. Supra"
     />
     &nbsp;
     <TextField id="outlined-basic" label="Body " variant="outlined" fullWidth
     value={body}
     onChange={(e)=>setBody(e.target.value)}
+    helperText="Ex. Coupe"
     />
     &nbsp;
     <TextField id="outlined-basic" label="Color " variant="outlined" fullWidth
     value={color}
     onChange={(e)=>setColor(e.target.value)}
+    helperText="Ex. White"
     />
     &nbsp;
     <FormControl fullWidth >
