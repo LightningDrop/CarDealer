@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CarDealer/static/css/main.1cb75196.css",
-    "main.js": "/CarDealer/static/js/main.d14ee0c3.js",
+    "main.js": "/CarDealer/static/js/main.d84f0c68.js",
     "static/js/787.cda612ba.chunk.js": "/CarDealer/static/js/787.cda612ba.chunk.js",
     "index.html": "/CarDealer/index.html",
     "main.1cb75196.css.map": "/CarDealer/static/css/main.1cb75196.css.map",
-    "main.d14ee0c3.js.map": "/CarDealer/static/js/main.d14ee0c3.js.map",
+    "main.d84f0c68.js.map": "/CarDealer/static/js/main.d84f0c68.js.map",
     "787.cda612ba.chunk.js.map": "/CarDealer/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1cb75196.css",
-    "static/js/main.d14ee0c3.js"
+    "static/js/main.d84f0c68.js"
   ]
 }
