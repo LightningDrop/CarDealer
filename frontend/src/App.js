@@ -17,8 +17,8 @@ function App() {
         <Appbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/BuyPage" element={<BuyPage />} />
-          <Route path="/SellPage" element={<SellPage />} />
+          <Route path="/frontend/src/BuyPage" element={<BuyPage />} />
+          <Route path="/frontend/src/SellPage" element={<SellPage />} />
         </Routes>
       </Router>
     </div>
